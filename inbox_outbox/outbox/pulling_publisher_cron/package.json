@@ -1,0 +1,31 @@
+{
+  "name": "pulling_publisher_cron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node index.ts",
+    "start": "ts-node dist/src/server.js",
+    "build": "tsc -p . -w > /dev/null 2>&1 &",
+    "lint": "eslint . --ext .ts",
+    "test": "jest",
+    "test:unit": "NODE_ENV=test jest --testPathPattern=\"__tests__/unit/*/*/\"",
+    "test:e2e": "NODE_ENV=test jest --testPathPattern=\"__tests__/e2e/*/*/\"",
+    "studio": "npx prisma studio",
+    "migrate": "npx prisma migrate dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "prisma": "^4.12.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.12.0",
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.0.3",
+    "node-cron": "^3.0.2"
+  }
+}

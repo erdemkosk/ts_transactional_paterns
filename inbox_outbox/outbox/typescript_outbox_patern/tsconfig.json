@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "target": "es2017",
+        "module": "commonjs",
+        "outDir": "./dist",
+        "baseUrl": "./src",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    },
+    "include": [
+        "src/**/*.ts",
+        "__tests__/**/*.ts",
+        "jest.setup.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "build",
+        "coverage"
+    ]
+}
