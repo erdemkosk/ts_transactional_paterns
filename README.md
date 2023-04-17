@@ -104,6 +104,16 @@ Some of them marked as __FAILED__ or __PROCESSED__ so we can retry the failed on
 
 ![rabbitmq](https://i.imgur.com/W7dKZJy.png)
 
+So when scale the cron process as we can see we locked values with __FOR UPDATE__ and __SKIP LOCKED__
+
+![cron1](https://i.imgur.com/oXREDXZ.png)
+
+cron 1
+
+![cron2](https://i.imgur.com/wfqZxcY.png)
+
+cron 2
+
 
 
 

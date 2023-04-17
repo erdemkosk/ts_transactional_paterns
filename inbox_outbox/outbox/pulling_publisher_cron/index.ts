@@ -21,6 +21,7 @@ async function cronJob() {
         WHERE "status" = ${OutboxMessageStatus.PENDING}
         LIMIT ${maxMessages}
         FOR UPDATE
+        SKIP LOCKED
       `;
     
           for (const outboxData of orderOutboxDatas) {
